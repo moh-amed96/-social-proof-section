@@ -1,0 +1,221 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: left top no-repeat url(/images/bg-pattern-top-desktop.svg), right  bottom no-repeat url(/images/bg-pattern-bottom-desktop.svg);
+    z-index: -1;
+}
+.card{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 50px 80px;
+    padding: 150px;
+    margin: 0;
+    
+}
+/* .info-text */
+.info-text{
+    grid-column: span 1;
+}
+.info-text h1{
+    color: var(--Very-Dark-Magenta);
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+.info-text p{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400px;
+    
+}
+/* rating */
+.rating{
+    grid-column: span 1;
+    margin: 0;
+}
+.container .card .rating .rate-1{
+    background-color: hsl(300, 24%, 96%);
+    height: 55px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.container .card .rating .rate-2{
+    background-color: hsl(300, 24%, 96%);
+    height: 55px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.container .card .rating .rate-3{
+    background-color: hsl(300, 24%, 96%);
+    height: 55px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    display: flex;
+}
+.star {
+    margin: auto 30px;
+}
+.container .card .rating p {
+    margin: auto 0;
+}
+/* feedback */
+.feedback{
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.feedback .feedback-1 {
+    background-color: var(--Very-Dark-Magenta);
+    width: 350px;
+    height: 235px;
+    border-radius: 10px;
+    margin: 0 30px 0 0;
+
+}
+.feedback .feedback-2 {
+    background-color: var(--Very-Dark-Magenta);
+    width: 350px;
+    height: 235px;
+    border-radius: 10px;
+    
+    margin: 15px 30px 0 0;
+
+}
+.feedback .feedback-3 {
+    background-color: var(--Very-Dark-Magenta);
+    width: 350px;
+    height: 235px;
+    border-radius: 10px;
+    
+    margin: 30px 30px 0 0;
+
+}
+
+.feedback .head {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.feedback .head .photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid var(--main-color);
+    margin-right: 25px;
+}
+.feedback .head h3 {
+    display:inline;
+    color: hsl(0, 0%, 100%);
+    
+   
+}
+.feedback .head p{
+    color: hsl(333, 80%, 67%);
+    margin:5px 0;
+}
+.feed-text{
+    padding:0 30px;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    line-height: 1.5;
+    font-size: 13px;
+}
+@media(max-width: 960px){
+    .card{
+        display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+        
+        align-items: center;
+    }
+
+
+.info-text h1{
+    color: var(--Very-Dark-Magenta);
+    font-size: 50px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+.info-text p{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400px;
+    margin: auto;
+    text-align: center;
+}
+.rating{
+    /* grid-area: item2; */
+    margin: 0;
+}
+.container .card .rating .rate-1{
+    display: block;
+    background-color: hsl(300, 24%, 96%);
+    height: 80px;
+    width: 80vw;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.container .card .rating .rate-2{
+    display: block;
+    background-color: hsl(300, 24%, 96%);
+    height: 80px;
+    width: 80vw;
+    border-radius: 10px;
+    margin: 20px 0;
+    
+}
+
+.container .card .rating .rate-3{
+    display: block;
+    background-color: hsl(300, 24%, 96%);
+    height: 80px;
+    width: 80vw;
+    border-radius: 10px;
+    margin: 20px 0;
+    
+}
+.star {
+    padding: 20px 0 10px;
+    text-align: center;
+}
+.container .card .rating p {
+    text-align: center;
+}
+.feedback{
+    /* grid-area: item3; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+}
